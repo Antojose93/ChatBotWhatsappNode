@@ -1,0 +1,30 @@
+{
+  "name": "chatbots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/bootstrap/main.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No hay pruebas automatizadas configuradas\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "@whatsmeow-node/whatsmeow-node": "^0.7.0",
+    "express": "^5.2.1",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.5.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "typescript": "^5.9.2"
+  }
+}

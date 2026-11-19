@@ -1,0 +1,4 @@
+<script setup lang="ts">
+withDefaults(defineProps<{ variant?: 'primary' | 'outline' | 'ghost'; type?: 'button' | 'submit' | 'reset'; disabled?: boolean }>(), { variant: 'outline', type: 'button', disabled: false })
+</script>
+<template><button :type="type" :disabled="disabled" :class="['inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-neutral-200 focus:ring-offset-1', variant === 'primary' ? 'border border-black bg-black text-white hover:-translate-y-px hover:bg-neutral-800' : variant === 'ghost' ? 'border border-transparent text-neutral-600 hover:bg-neutral-50 hover:text-black' : 'border border-neutral-200 bg-white text-black hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(37,211,102,.2)]']"><slot /></button></template>
